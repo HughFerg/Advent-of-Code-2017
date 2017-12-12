@@ -1,0 +1,34 @@
+import sys
+
+# Takes in user input for thing
+def getInput():
+    number = raw_input("Please enter your number: ")
+    
+    computeNumber(number)
+
+
+# Computes number according to AOC problem
+# num is a string initially
+def computeNumber(num):
+    
+    sum = 0
+    length = len(num)
+
+    for x in range (0, length- 1):
+        if num.index(x) == num.index(x + 1):
+            
+            sum += int(num.index(x))
+
+    
+    if num(0) == num (len):
+        sum += int(num.index(0))
+        
+    print sum
+
+
+def main():
+    getInput()
+
+
+if __name__ == "__main__":
+    main()
